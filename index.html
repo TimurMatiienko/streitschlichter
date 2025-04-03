@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Streitschlichter</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+
+    <!-- Navigationsmenü -->
+    <nav>
+        <ul>
+            <li><a href="#" onclick="showSection('startseite')">Startseite</a></li>
+            <li><a href="#" onclick="showSection('fotos')">Fotos</a></li>
+            <li><a href="#" onclick="showSection('fragen')">Fragen</a></li>
+        </ul>
+    </nav>
+
+    <!-- Startseite -->
+    <section id="startseite" class="content active">
+        <header>
+            <h1>Willkommen bei den Streitschlichtern</h1>
+            <p>Wir helfen euch, Konflikte fair zu lösen!</p>
+        </header>
+
+        <main>
+            <h2>Was machen Streitschlichter?</h2>
+            <p>Streitschlichter helfen dabei, Streit in der Schule oder im Alltag friedlich zu lösen. Sie hören zu, bleiben neutral und unterstützen euch dabei, eine Lösung zu finden, mit der alle zufrieden sind.</p>
+
+            <h2>Wann und wo treffen wir uns?</h2>
+            <p>Unsere Streitschlichter-Treffen finden <b>jeden Mittwoch in der Bücherei</b> statt. Kommt vorbei, wenn ihr Hilfe braucht oder selbst Streitschlichter werden wollt!</p>
+        </main>
+    </section>
+
+    <!-- Fotos -->
+    <section id="fotos" class="content">
+        <span class="close-btn" onclick="showSection('startseite')">✖</span>
+        <h2>Unsere Fotos</h2>
+        <p>Hier findest du Bilder unserer Streitschlichter in Aktion.</p>
+        <img src="./images/kinder stehen.jpg" alt="Streitschlichter in Aktion" width="300">
+        <img src="./images/tabelle.jpg" alt="tabelle" width="300">
+    </section>
+
+    <!-- Fragen -->
+    <section id="fragen" class="content">
+        <span class="close-btn" onclick="showSection('startseite')">✖</span>
+        <h2> Deine Frage</h2>
+        <p>Schreibe uns deine Frage oder lade eine Datei hoch. Wir melden uns bald!</p>
+    
+        <form action="https://getform.io/f/byvkjxya" method="POST" enctype="multipart/form-data">
+            <textarea name="message" rows="6" required placeholder="Deine Frage an die Streitschlichter..."></textarea>
+            <input type="file" name="file">
+            <input type="submit" value="Absenden">
+        </form>
+    </section>
+    
+
+</body>
+</html>
