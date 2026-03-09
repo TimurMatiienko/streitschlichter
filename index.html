@@ -3,59 +3,199 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Streitschlichter</title>
+    <meta name="description" content="Die Streitschlichter helfen Schülerinnen und Schülern dabei, Konflikte fair und respektvoll zu lösen.">
+    <title>Streitschlichter-Team</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <script defer src="script.js"></script>
 </head>
 <body>
+    <header class="site-header" id="start">
+        <div class="container nav-container">
+            <a class="logo" href="#start">Streitschlichter</a>
+            <button class="nav-toggle" aria-controls="hauptmenue" aria-expanded="false" aria-label="Navigation umschalten">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <nav id="hauptmenue" class="main-nav" aria-label="Hauptnavigation">
+                <ul>
+                    <li><a href="#auftrag">Unser Auftrag</a></li>
+                    <li><a href="#team">Team</a></li>
+                    <li><a href="#ablauf">So läuft es ab</a></li>
+                    <li><a href="#faq">Fragen &amp; Antworten</a></li>
+                    <li><a class="button" href="#kontakt">Kontakt</a></li>
+                </ul>
+            </nav>
+        </div>
+        <section class="hero">
+            <div class="container hero-content">
+                <div>
+                    <p class="eyebrow">Gemeinsam Konflikte lösen</p>
+                    <h1>Wir hören zu &amp; finden Lösungen</h1>
+                    <p class="lead">Das Streitschlichter-Team begleitet dich Schritt für Schritt zu einer fairen Lösung. Wir schaffen einen sicheren Raum für gute Gespräche.</p>
+                    <div class="hero-actions">
+                        <a class="button primary" href="#kontakt">Termin vereinbaren</a>
+                        <a class="button ghost" href="#ablauf">Mehr erfahren</a>
+                    </div>
+                </div>
+                <figure class="hero-image" aria-hidden="true"></figure>
+            </div>
+        </section>
+    </header>
 
-    <!-- Navigationsmenü -->
-    <nav>
-        <ul>
-            <li><a href="#" onclick="showSection('startseite')">Startseite</a></li>
-            <li><a href="#" onclick="showSection('fotos')">Fotos</a></li>
-            <li><a href="#" onclick="showSection('fragen')">Fragen</a></li>
-        </ul>
-    </nav>
+    <main>
+        <section id="auftrag" class="section light">
+            <div class="container grid-2">
+                <div>
+                    <h2>Unser Auftrag</h2>
+                    <p>Streitschlichterinnen und Streitschlichter sind speziell ausgebildete Schülerinnen und Schüler. Wir unterstützen euch, wenn ein Konflikt feststeckt. Mit Empathie, Ruhe und einer klaren Gesprächsstruktur helfen wir dabei, Missverständnisse aufzulösen und Vereinbarungen zu treffen, die für alle funktionieren.</p>
+                    <p>Bei uns gilt: Wir hören allen zu, bleiben neutral und behandeln jedes Gespräch vertraulich. Ihr behaltet jederzeit die Kontrolle darüber, welche Schritte ihr gehen möchtet.</p>
+                </div>
+                <div class="highlight-box">
+                    <h3>Darauf kannst du dich verlassen</h3>
+                    <ul>
+                        <li>Vertrauliche Gespräche</li>
+                        <li>Respektvoller Umgang</li>
+                        <li>Lösungen, die alle mittragen</li>
+                        <li>Unterstützung bei weiteren Schritten</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
 
-    <!-- Startseite -->
-    <section id="startseite" class="content active">
-        <header>
-            <h1>Willkommen bei den Streitschlichtern</h1>
-            <p>Wir helfen euch, Konflikte fair zu lösen!</p>
-        </header>
+        <section id="team" class="section">
+            <div class="container">
+                <h2>Unser Team</h2>
+                <p class="section-intro">Wir sind ein bunt gemischtes Team aus verschiedenen Klassenstufen. Durch unsere Ausbildung kennen wir Methoden, die euch helfen, ruhig miteinander zu sprechen und Ziele festzulegen.</p>
+                <div class="card-grid">
+                    <article class="card">
+                        <img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=600&q=80" alt="Lachende Schülerin" loading="lazy">
+                        <div class="card-body">
+                            <h3>Lea</h3>
+                            <p>Lea moderiert eure Gespräche mit Geduld und Humor. Sie sorgt dafür, dass jede Stimme gehört wird.</p>
+                        </div>
+                    </article>
+                    <article class="card">
+                        <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=600&q=80" alt="Schüler im Gespräch" loading="lazy">
+                        <div class="card-body">
+                            <h3>Murat</h3>
+                            <p>Murat behält den Überblick. Er fasst eure Ideen zusammen und hilft dabei, konkrete Vereinbarungen zu treffen.</p>
+                        </div>
+                    </article>
+                    <article class="card">
+                        <img src="https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?auto=format&fit=crop&w=600&q=80" alt="Teamarbeit" loading="lazy">
+                        <div class="card-body">
+                            <h3>Sofia</h3>
+                            <p>Sofia hat ein offenes Ohr für deine Gefühle. Sie sorgt für eine wertschätzende Atmosphäre im Gespräch.</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
 
-        <main>
-            <h2>Was machen Streitschlichter?</h2>
-            <p>Streitschlichter helfen dabei, Streit in der Schule oder im Alltag friedlich zu lösen. Sie hören zu, bleiben neutral und unterstützen euch dabei, eine Lösung zu finden, mit der alle zufrieden sind.</p>
+        <section id="ablauf" class="section light">
+            <div class="container">
+                <h2>So läuft eine Streitschlichtung ab</h2>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <span class="step">1</span>
+                        <div>
+                            <h3>Kontakt aufnehmen</h3>
+                            <p>Melde dich bei uns über das Formular oder sprich uns persönlich an. Gemeinsam vereinbaren wir einen Termin.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <span class="step">2</span>
+                        <div>
+                            <h3>Gesprächsvorbereitung</h3>
+                            <p>Wir erklären euch den Ablauf und unsere Regeln. Jede Person hat Zeit, ihre Sicht ruhig zu schildern.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <span class="step">3</span>
+                        <div>
+                            <h3>Lösungen entwickeln</h3>
+                            <p>Wir sammeln Ideen und prüfen, was fair ist. Am Ende haltet ihr eure Vereinbarung schriftlich fest.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <span class="step">4</span>
+                        <div>
+                            <h3>Nachbesprechung</h3>
+                            <p>Auf Wunsch treffen wir uns nach ein paar Tagen noch einmal und schauen, wie es euch mit der Vereinbarung geht.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-            <h2>Wann und wo treffen wir uns?</h2>
-            <p>Unsere Streitschlichter-Treffen finden <b>jeden Mittwoch in der Bücherei</b> statt. Kommt vorbei, wenn ihr Hilfe braucht oder selbst Streitschlichter werden wollt!</p>
-        </main>
-    </section>
+        <section id="faq" class="section">
+            <div class="container">
+                <h2>Fragen &amp; Antworten</h2>
+                <p class="section-intro">Hier findest du Antworten auf die häufigsten Fragen. Deine Frage ist nicht dabei? Schreib uns einfach!</p>
+                <div class="faq-list">
+                    <details>
+                        <summary>Wer kann zu euch kommen?</summary>
+                        <p>Alle Schülerinnen und Schüler unserer Schule können sich bei uns melden – egal ob alleine oder gemeinsam mit anderen.</p>
+                    </details>
+                    <details>
+                        <summary>Kostet die Streitschlichtung etwas?</summary>
+                        <p>Nein, unser Angebot ist kostenlos. Wir engagieren uns ehrenamtlich und werden von unseren Lehrkräften unterstützt.</p>
+                    </details>
+                    <details>
+                        <summary>Wie lange dauert ein Gespräch?</summary>
+                        <p>Plane ungefähr 30 bis 45 Minuten ein. Wenn ihr mehr Zeit benötigt, vereinbaren wir einen weiteren Termin.</p>
+                    </details>
+                    <details>
+                        <summary>Ist alles vertraulich?</summary>
+                        <p>Ja. Wir behandeln alle Informationen vertraulich und erzählen nichts weiter, es sei denn, ihr wünscht euch das ausdrücklich.</p>
+                    </details>
+                </div>
+            </div>
+        </section>
 
-    <!-- Fotos -->
-    <section id="fotos" class="content">
-        <span class="close-btn" onclick="showSection('startseite')">✖</span>
-        <h2>Unsere Fotos</h2>
-        <p>Hier findest du Bilder unserer Streitschlichter in Aktion.</p>
-        <img src="./images/kinder stehen.jpg" alt="Streitschlichter in Aktion" width="300">
-        <img src="./images/tabelle.jpg" alt="tabelle" width="300">
-    </section>
+        <section id="kontakt" class="section contact">
+            <div class="container grid-2">
+                <div>
+                    <h2>Schreib uns deine Nachricht</h2>
+                    <p>Du möchtest ein Gespräch vereinbaren oder hast Fragen? Schicke uns eine Nachricht. Wir melden uns so schnell wie möglich zurück.</p>
+                    <ul class="contact-info">
+                        <li><strong>Ort:</strong> Streitschlichter-Raum in der Schulbücherei</li>
+                        <li><strong>Zeit:</strong> Jeden Mittwoch in der zweiten großen Pause</li>
+                        <li><strong>E-Mail:</strong> <a href="mailto:streitschlichter@schule.de">streitschlichter@schule.de</a></li>
+                    </ul>
+                </div>
+                <form class="contact-form" name="kontakt" method="POST" data-netlify="true" data-netlify-honeypot="bot-field" action="/danke.html" enctype="multipart/form-data">
+                    <input type="hidden" name="form-name" value="kontakt">
+                    <p class="visually-hidden">
+                        <label>Bitte nicht ausfüllen: <input name="bot-field" type="text"></label>
+                    </p>
+                    <label for="name">Name (freiwillig)</label>
+                    <input id="name" name="name" type="text" placeholder="Dein Name">
 
-    <!-- Fragen -->
-    <section id="fragen" class="content">
-        <span class="close-btn" onclick="showSection('startseite')">✖</span>
-        <h2> Deine Frage</h2>
-        <p>Schreibe uns deine Frage oder lade eine Datei hoch. Wir melden uns bald!</p>
-    
-        <form action="https://getform.io/f/byvkjxya" method="POST" enctype="multipart/form-data">
-            <textarea name="message" rows="6" required placeholder="Deine Frage an die Streitschlichter..."></textarea>
-            <input type="file" name="file">
-            <input type="submit" value="Absenden">
-        </form>
-    </section>
-    
+                    <label for="klasse">Klasse</label>
+                    <input id="klasse" name="klasse" type="text" placeholder="z. B. 7b">
 
+                    <label for="message">Deine Nachricht *</label>
+                    <textarea id="message" name="message" rows="5" required placeholder="Wobei dürfen wir dich unterstützen?"></textarea>
+
+                    <label for="file">Datei anhängen (optional)</label>
+                    <input id="file" name="file" type="file">
+
+                    <button type="submit" class="button primary">Nachricht senden</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-content">
+            <p>&copy; <span id="jahr"></span> Streitschlichter-Team. Gemeinsam für ein faires Miteinander.</p>
+            <a class="footer-link" href="#start">Zurück nach oben</a>
+        </div>
+    </footer>
 </body>
 </html>
