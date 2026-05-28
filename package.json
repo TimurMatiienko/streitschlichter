@@ -1,0 +1,11 @@
+{
+  "name": "streitschlichter",
+  "version": "1.0.0",
+  "description": "Streitschlichter website + simple API",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "node --test"
+  },
+  "license": "MIT"
+}

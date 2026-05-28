@@ -51,3 +51,22 @@ header {
     font-size: 30px;
     cursor: pointer;
 }
+
+#question-form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    max-width: 420px;
+    margin: 0 auto;
+}
+
+#question-form input[type="text"],
+#question-form textarea {
+    padding: 10px;
+    font-size: 16px;
+}
+
+#form-status {
+    margin-top: 8px;
+    min-height: 20px;
+}

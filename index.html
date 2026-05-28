@@ -46,16 +46,16 @@
     <!-- Fragen -->
     <section id="fragen" class="content">
         <span class="close-btn" onclick="showSection('startseite')">✖</span>
-        <h2> Deine Frage</h2>
-        <p>Schreibe uns deine Frage oder lade eine Datei hoch. Wir melden uns bald!</p>
-    
-        <form action="https://getform.io/f/byvkjxya" method="POST" enctype="multipart/form-data">
+        <h2>Deine Frage</h2>
+        <p>Schreibe uns deine Frage. Wir melden uns bald!</p>
+
+        <form id="question-form">
+            <input type="text" name="senderName" placeholder="Dein Name (optional)">
             <textarea name="message" rows="6" required placeholder="Deine Frage an die Streitschlichter..."></textarea>
-            <input type="file" name="file">
             <input type="submit" value="Absenden">
         </form>
+        <p id="form-status" aria-live="polite"></p>
     </section>
-    
 
 </body>
 </html>
